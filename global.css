@@ -1,0 +1,136 @@
+/* _____________ */
+/* Mobile Styles */
+/* _____________ */
+/* Base */
+html, body {
+    margin: 0;
+    padding: 0;
+ }
+ body {
+    font-size: 1rem;
+ }
+ body * {
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+ }
+ h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    text-transform: capitalize;
+ }
+ ul, p {
+    margin: 0;
+ }
+ p {
+    line-height: 1.5;
+ }
+ a {
+    text-decoration: none;
+    color: #3575c2;
+    font-weight: bold;
+    font-size: .85rem;
+ }
+ a:hover {
+    opacity: .65;
+ }
+ img {
+    width: 100%;
+ }
+ header, section {
+    margin-bottom: 120px;
+ }
+ /* Layout */
+.container {
+    padding: 0 30px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.nav-col {
+    width: 50%;
+}
+.nav-show-list {
+    display: none;
+}
+ /* Blocks */
+ .nav {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+    position: fixed;
+    width: 100%;
+    background: white;
+ }
+ .nav__wrapper {
+    display: flex;
+    align-items: center;
+ }
+ .nav__logo-wrapper {
+     max-width: 140px;
+ }
+ .nav__menu-icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
+ }
+ .nav__menu-icon {
+    width: 30px;
+    object-fit: contain;
+ }
+ .hero {
+     height: 100vh;
+     flex-direction: column;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url('https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg');
+     background-color: rgba(0,0,0,0.50);
+     background-blend-mode: overlay;
+     background-size: cover;
+     background-position: center center;
+ }
+ .hero__heading, .hero__body {
+     color: white
+ }
+ .features__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+ .features__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;;
+}
+ .features__icon {
+    max-width: 120px;
+    margin-bottom: 30px;
+ }
+/* _______________________ */
+/* Tablet / Desktop styles */
+/* _______________________ */
+@media (min-width: 600px) {
+    /* Base */
+    body {
+        font-size: 1.15rem;
+     }
+    /* Layout */
+    .nav-show-icon {
+        display: none;
+    }
+    .nav-show-list {
+        display: block;
+    }
+    /* Blocks */
+    .nav {
+        padding: 7.5px 0;
+    }
+    .nav__list {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+    }
+    .nav__list-item {
+        padding: 0 15px;
+    }
+    .features__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
