@@ -74,16 +74,16 @@ html, body {
     object-fit: contain;
  }
  .hero {
-     height: 100vh;
-     flex-direction: column;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-image: url('https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg');
-     background-color: rgba(0,0,0,0.50);
-     background-blend-mode: overlay;
-     background-size: cover;
-     background-position: center center;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg');
+    background-color: rgba(0,0,0,0.50);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
  }
  .hero__heading, .hero__body {
      color: white
